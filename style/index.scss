@@ -10,6 +10,7 @@ body {
 .screen {
   width: 100%;
   background-image: url("../img/header-background-back.png"), url("../img/header-background.png");
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -38,8 +39,25 @@ body {
   }
 }
 
+.projectsSection {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $font-blue;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .footer {
   width: 100%;
   color: $font-white;
   background-image: url("../img/header-background-back.png"), url("../img/header-background.png");
+  display: flex;
+  justify-content: space-evenly; 
 }
