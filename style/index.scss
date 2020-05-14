@@ -98,6 +98,16 @@ body {
        letter-spacing: 0.1em;
        margin: 0;
     }
+
+    &--subTitle {
+       font-style: normal;
+       font-weight: normal;
+       font-size: 1.1rem;
+       line-height: 1.2;
+       letter-spacing: 0.3em;
+       margin: 0;
+       
+    }
 }
 .projectsSection {
     width: 100%;

@@ -117,6 +117,15 @@ body {
   margin: 0;
 }
 
+.slickSlider__slide--subTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  letter-spacing: 0.3em;
+  margin: 0;
+}
+
 .projectsSection {
   width: 100%;
   background-color: #ffffff;
