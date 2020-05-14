@@ -80,6 +80,10 @@ body {
           justify-content: flex-start;
 }
 
+.divider {
+  border: 1px solid #2c4058;
+}
+
 .footer {
   width: 100%;
   color: #ffffff;

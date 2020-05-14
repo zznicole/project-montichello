@@ -55,6 +55,10 @@ body {
     justify-content: flex-start;
   }
 
+.divider  {
+    border: 1px solid $font-blue;
+}
+
 .footer {
     width: 100%;
     color: $font-white;
@@ -62,3 +66,4 @@ body {
     display: flex;
     justify-content: space-evenly; 
 }
+

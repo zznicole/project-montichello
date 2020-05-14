@@ -58,7 +58,7 @@
       </header>
 <!--projects section--> 
       <section class="projectsSection">
-          <div class="divider"></div>
+        <hr class="divider" width="5%">
           <h2 class="projects__title">WHAT WE DO</h2>
           <div class="project">
               <img src="img/projects-1.png">
@@ -88,7 +88,7 @@
       </section>
 <!--news section--> 
       <section class="news">
-          <div class="divider"></div>
+        <hr class="divider" width="5%">
           <h2 class="news__title">LATEST NEWS</h2>
           <div class="newsSliders">
               <div class="newsSlickSlider">
@@ -115,11 +115,8 @@
       </section>
 <!--gallery section--> 
       <section class="gallery">
-          <div class="divider"></div>
+        <hr class="divider" width="5%">
           <h2 class="gallery__title">GALLERY</h2>
-      </section>
-<!--contact section--> 
-      <section class="contact"></section>
           <div class="galleryGrid">
               <img src="img/gallery-1.png">
               <img src="img/gallery-2.png">
@@ -127,7 +124,54 @@
               <img src="img/gallery-4.png">
               <img src="img/gallery-5.png">
           </div>
-      <button class="galleryButton">SEE MORE</button>
+          <button class="galleryButton">SEE MORE</button>
+      </section>
+<!--contact section--> 
+      <section class="contact">
+          <div id="map">
+
+          </div>
+          <div id="form">
+              <hr class="divider" width="10%">
+              <h2 class="contact__title">GET IN TOUCH</h2>
+              <div class="contactInfo">
+                  <div class="contactInfo__montichello">
+                      <div class="contactInfo__montichello--content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>91 Nolan Extension Suite 670</p>
+                      </div>
+                      <div class="contactInfo__montichello--content">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+001 356-868-2454</p>
+                      </div>
+                      <div class="contactInfo__montichello--content">
+                        <i class="fas fa-inbox"></i>
+                        <p>montichello@service.com</p>
+                      </div>
+                      <div class="contactInfo__montichello--content">
+                        <i class="far fa-clock"></i>
+                        <p>From 07:05AM to 19:30PM</p>
+                      </div>
+                  </div>
+                  <div class="contactInfo__userInput">
+                      <input type="name" 
+                          id="contactInfo__userInput--name" 
+                          placeholder="Type your full name" 
+                          pattern="[A-Za-z}" 
+                          title="Enter your full name!"
+                          autocomplete="on" autofocus>
+                      <input type="email" 
+                          id="contactInfo__userInput-email" 
+                          placehold="Email" 
+                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                          title="Enter your email!"
+                          autocomplete="on">
+                      <button type="submit" id="submitButton">SUBMIT</button>
+                  </div>
+              </div>
+          </div>
+      </section>
+          
 <!--footer section-->    
       <footer class="footer">
          <div class="footer__logo"><img src="img/header-logo.png" /><h6 class="copyRight">Copyrights 202 Montichello</h6></div>
