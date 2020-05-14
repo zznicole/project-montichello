@@ -1,6 +1,9 @@
 /*  header  */
 
-$('.slickSlider').slick();
+$('.slickSliderContainer').slick({
+  dots: true,
+  autoplay: true,
+});
 
 // $(document).ready(function(){
 //   $('.slickSlider').slick({
