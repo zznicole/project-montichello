@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +16,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/*  header */
 .header {
   width: 73%;
   height: 100vh;
@@ -43,7 +48,7 @@ body {
   margin-top: 3em;
 }
 
-.nav__list {
+.nav__lists {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +57,29 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: circle;
+}
+
+.nav__lists:hover, .nav__lists :active {
+  list-style: disc;
+  color: #ffffff;
+}
+
+.nav__lists--link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav__lists--link:hover, .nav__lists--link :active {
+  color: #444444;
+}
+
+.nav__socialMedia--icon--t {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.nav__socialMedia--icon:hover {
+  color: #444444;
 }
 
 .projectsSection {

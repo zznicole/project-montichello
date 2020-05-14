@@ -13,23 +13,23 @@
   </head>
   <body>
     <div class="screen">
-<!-- HEADER --> 
+<!-- header --> 
       <header class="header">
         <nav class="nav">
-          <div class="nav__logo"><img src="img/header-logo.png" /></div>
-          <ul class="nav__list">
-            <li class="nav__list--link">ABOUT US</li>
-            <li class="nav__list--link">PROJECTS</li>
-            <li class="nav__list--link">NEWS</li>
-            <li class="nav__list--link">CONTACT</li>
+          <img src="img/header-logo.png" class="nav__logo">
+          <ul class="nav__lists">
+            <li class="nav__lists--list"><a href="#aboutUs" class="nav__lists--link">ABOUT US</a></li>
+            <li class="nav__lists--list"><a href="#projects" class="nav__lists--link">PROJECTS</a></li>
+            <li class="nav__lists--list"><a href="#news" class="nav__lists--link">NEWS</a></li>
+            <li class="nav__lists--list"><a href="#contact" class="nav__lists--link">CONTACT</a></li>
           </ul>
-          <div class="socialmedia">
-            <img src="img/header-fb.png" />
-            <img src="img/header-twitter.png" />
-            <img src="img/header-ig.png" />
+          <div class="nav__socialMedia">
+            <a href="https://www.facebook.com/#" class="nav__socialMedia--icon--link"><img src="img/header-fb.png" class="nav__socialMedia--icon nav__socialMedia--icon--fb"></a>
+            <a href="https://www.twitter.com/#" class="nav__socialMedia--icon--link"><img src="img/header-twitter.png" class="nav__socialMedia--icon nav__socialMedia--icon--t"></a>
+            <a href="https://www.instagram.com/#" class="nav__socialMedia--icon--link"><img src="img/header-ig.png" class="nav__socialMedia--icon nav__socialMedia--ig"></a>
           </div>
         </nav>
-        <div class="sliderContainer">
+        <div class="sliderContainer" id="aboutUs">
           <div class="slickSlider">
             <div class="slickSlider__slide slickSlider__slide1">
               <h1>SIMPLE & MODERN</h1>
@@ -55,7 +55,7 @@
         </div>
       </header>
 <!-- PROJECTS --> 
-      <section class="projectsSection">
+      <section class="projectsSection" id="projects">
         <hr class="divider" width="5%">
           <h2 class="projects__title">WHAT WE DO</h2>
           <div class="project">
@@ -85,7 +85,7 @@
           </div>
       </section>
 <!-- NEWS --> 
-      <section class="news">
+      <section class="news" id="news">
         <hr class="divider" width="5%">
           <h2 class="news__title">LATEST NEWS</h2>
           <div class="newsSliders">
@@ -125,7 +125,7 @@
           <button class="galleryButton">SEE MORE</button>
       </section>
 <!-- CONTACT --> 
-      <section class="contact">
+      <section class="contact" id="contact">
           <div id="map">
 
           </div>
