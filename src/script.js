@@ -7,11 +7,11 @@ $('.slickSliderContainer').slick({
 });
 
 /*  news  */
-$('.newsSlickSlider').slick({
+$('.newsSliders').slick({
   dots: true,
   infinite: true,
-  slidesToScroll: 5,
-  slidesToShow: 5,
+  slidesToScroll: 3,
+  slidesToShow: 3,
   autoplay: true,
 });
 
