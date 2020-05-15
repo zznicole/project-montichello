@@ -6,6 +6,11 @@ $('.slickSliderContainer').slick({
   arrows: false
 });
 
+$('.newsSlickSlider').slick({
+  dots: true,
+  autoplay: true,
+});
+
 // $(document).ready(function(){
 //   $('.slickSlider').slick({
 //     setting-name: setting-value
