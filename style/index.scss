@@ -18,7 +18,8 @@ body {
     background-repeat: no-repeat;
 }
 
-/*  header */
+/*   header   */
+
 .header {
     width: 100%;
     height: 100vh;
@@ -112,7 +113,6 @@ body {
        line-height: 1.2;
        letter-spacing: 0.3em;
        margin: 0;
-       
     }
 }
 
@@ -134,11 +134,11 @@ body {
      color: #444444;
 }
 
-/*  projects  */
+/*   projects   */
+
 .projectsSection {
-    margin: 1em 0;
     width: 100%;
-    max-height: 1367px;
+    min-height: 1604px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -147,19 +147,102 @@ body {
     color: $font-blue;
 }
 
-.project {
+.titleContainer {
     width: 100%;
+    height: 227px;
     display: flex;
-    justify-content: flex-start;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.projects {
-
+    &__box {
+        width: 21%;
+        height: 37%;
+        
+        &--divider  {
+          border: 1px solid $font-blue;
+        }
+        
+        &--title {
+          @extend %title;
+        }
+    }
 }
 
-.divider  {
-    border: 1px solid $font-blue;
-    margin: 0 auto;
+.projectsContainer {
+    width: 100%;
+    height: 667px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.projects {
+    width: 87%;
+    height: 79%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.projects2 {
+    position: absolute;
+    right: 0px;
+}
+
+.project {
+    width: 35%;
+    height: 351px;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    &__content {
+       height: 245px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+
+       &--title {
+          margin: 0;
+          @extend %title;
+      }
+
+       &--content {
+          margin: 0;
+          @extend %content;
+       }
+
+       &--button {
+          @extend %button;
+
+          &:hover {
+           @extend %button:hover;
+          }
+       }
+    }
+
+    &__location {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        color: #000000;
+        font-family: $font-family2;
+        font-style: italic;
+        font-weight: normal;
+        font-size: .94rem;
+        line-height: 20px;
+    }
 }
 
 .footer {
