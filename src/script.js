@@ -3,6 +3,7 @@
 $('.slickSliderContainer').slick({
   dots: true,
   autoplay: true,
+  arrows: false
 });
 
 // $(document).ready(function(){
@@ -15,7 +16,7 @@ $('.slickSliderContainer').slick({
 
 // NEWS
 
-
+ s
 // GALLERY
 
 
