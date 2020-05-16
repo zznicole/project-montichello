@@ -1,11 +1,11 @@
 .project__content--button {
-  width: 118px;
+  width: 45%;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: .9rem;
   line-height: 1.2;
-  padding: 1.1em 2.4em;
+  padding: 1.1em 2em;
   border: 1px solid #2c4058;
   color: #000000;
   background-color: #ffffff;
@@ -96,7 +96,8 @@ body {
   list-style: circle;
 }
 
-.nav__lists:hover, .nav__lists :active {
+.nav__lists:hover,
+.nav__lists :active {
   list-style: disc;
   color: #ffffff;
 }
@@ -106,7 +107,8 @@ body {
   color: #ffffff;
 }
 
-.nav__lists--link:hover, .nav__lists--link :active {
+.nav__lists--link:hover,
+.nav__lists--link :active {
   color: #444444;
 }
 
@@ -338,8 +340,13 @@ body {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: normal;
-  font-size: .94rem;
+  font-size: 0.94rem;
   line-height: 20px;
+}
+
+.project__location--icon {
+  color: #000000;
+  font-size: 1rem;
 }
 
 /*   news   */
@@ -409,7 +416,7 @@ body {
   line-height: 1.2;
   margin: 0;
   color: #2c4058;
-  padding: .9em;
+  padding: 0.9em;
 }
 
 .newsSlickSlider__card--content {
