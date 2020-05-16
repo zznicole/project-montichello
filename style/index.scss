@@ -257,7 +257,7 @@ body {
     justify-content: space-around;
 
     &__title {
-        width: 20%;
+        width: 21%;
         height: 84px;
         display: flex;
         flex-direction: column;
@@ -277,6 +277,7 @@ body {
 
 .newsSliders {
    width: 90%
+   
 }
 
 .newsSlickSlider {
@@ -295,10 +296,16 @@ body {
             line-height: 1.2;
             margin: 0;
             color: $font-blue;
+            padding: .9em;
         }
 
         &--content {
             @extend %content;
+            padding: 0 1.2em;
+        }
+
+        &--author {
+            padding-left: 1.2em;
         }
     }
 }
