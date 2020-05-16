@@ -14,7 +14,7 @@ body {
 
 .screen {
     width: 100%;
-    height: 5691px;
+    height: 5641px;
     background-image: url("../img/header-background-back.png"), url("../img/header-background.png");
     background-repeat: no-repeat;
 }
@@ -250,7 +250,7 @@ body {
 .news {
     width: 100%;
     height: 1035px;
-    background-image: url("../img/news-background.png/");
+    background-image: url("../img/news-background.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,15 +275,18 @@ body {
     }
 }
 
+.newsSliders {
+   width: 90%
+}
+
 .newsSlickSlider {
     width: 90%;
     height: 627px;
 
     &__card {
-        width: 23%;
+        width: 77%;
         height: 514px;
         background-color: #ffffff;
-        border: 1px solid blue;
 
         &--title {
             font-style: normal;
@@ -313,10 +316,13 @@ body {
 
 /*   contact   */
 
+.contactSection {
+    width: 100%;
+}
 #map {
     width: 100%;
     height: 700;
-    overflow: visible;
+    
 }
 
 

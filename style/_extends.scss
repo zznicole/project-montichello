@@ -1,4 +1,5 @@
 %button {
+  width: 118px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -25,10 +26,11 @@
 }
 
 %content {
-font-family: $font-family-p;
+font-family: $font-family2;
 font-style: normal;
 font-weight: normal;
 font-size: 1.1rem;
 line-height: 1.7;
 color: $font-blue;
+background-color: #ffffff;
 }
