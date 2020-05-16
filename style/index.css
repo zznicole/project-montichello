@@ -17,7 +17,7 @@
   background-color: #999999;
 }
 
-.titleContainer__box--title, .project__content--title, .news__title--title, .gallery__title--title {
+.titleContainer__box--title, .project__content--title, .news__title--title, .gallery__title--title, .contact__title--title {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -527,11 +527,72 @@ body {
 /*   contact   */
 .contactSection {
   width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #map {
   width: 100%;
   height: 700px;
+}
+
+.contact {
+  width: 48%;
+  height: 450px;
+  position: absolute;
+  bottom: -150px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact__title {
+  width: 45%;
+  height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__title--divider {
+  border: 1px solid #2c4058;
+}
+
+.contactInfo {
+  width: 94%;
+  height: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*   footer   */
@@ -546,5 +607,8 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=index.css.map */
