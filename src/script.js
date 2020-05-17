@@ -11,8 +11,8 @@ $('.slickSliderContainer').slick({
 $('.newsSliders').slick({
   dots: true,
   infinite: true,
-  slidesToScroll: 3,
-  slidesToShow: 3,
+  slidesToScroll: 1,
+  slidesToShow: 1,
   autoplay: true,
 });
 
