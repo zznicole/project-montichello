@@ -205,9 +205,10 @@ body {
 }
 
 .slickSliderContainer .slick-dots {
+  height: 210px;
   position: absolute;
-  left: 1550px;
-  top: 100px;
+  left: 1530px;
+  top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,17 +216,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #ffffff;
-  list-style: circle;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.slick-slider .slick-dots {
-  list-style: circle;
+.slick-dots li.slick-active button:before, .slick-dots li button:before {
+  color: #ffffff;
+  opacity: .30;
+  font-size: .8rem;
 }
 
-.slick-dots li.slick-active {
-  color: #ffffff;
-  opacity: 0, 75;
+.slick-dots li.slick-active button {
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+}
+
+.slick-dots li.slick-active button:before {
+  color: transparent;
 }
 
 .scrollDownArrow:hover {
@@ -464,7 +472,6 @@ body {
 .newsSliders .slick-slider ul {
   position: absolute;
   bottom: -25px;
-  color: #ffffff;
 }
 
 /*   gallery   */
