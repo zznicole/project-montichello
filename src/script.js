@@ -21,7 +21,7 @@ $(".nav__lists--list.scrollDownArrow").on('click', function(event) {
 // slick slider 
 $('.slickSliderContainer').slick({
   dots: true,
-  // autoplay: true,
+  autoplay: true,
   arrows: false,
   draggable: true,
 });
@@ -30,16 +30,17 @@ $('.slickSliderContainer').slick({
 $('.newsSliders').slick({
   dots: true,
   infinite: true,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   slidesToShow: 3,
-  autoplay: true,
+  // autoplay: true,
+  draggable: true,
 });
 
 /*  contect  */
 let map = new google.maps.Map(document.getElementById("map"), {
   center: {lat: 40.696220, lng: -73.984460},
-  zoom: 18,
-  style: [
+  zoom: 17,
+  styles: [
     {
       "elementType": "geometry",
       "stylers": [

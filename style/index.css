@@ -1,4 +1,4 @@
-.project__content--button, .gallery--button, .contactInfo__userInput--submit {
+.project__content--button, .gallery__button, .contactInfo__userInput--submit {
   width: 45%;
   font-family: Montserrat;
   font-style: normal;
@@ -11,7 +11,7 @@
   background-color: #ffffff;
 }
 
-.project__content--button:hover, .gallery--button:hover, .contactInfo__userInput--submit:hover {
+.project__content--button:hover, .gallery__button:hover, .contactInfo__userInput--submit:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: #999999;
@@ -26,7 +26,7 @@
   color: #2c4058;
 }
 
-.project__content--content, .newsSlickSlider__card--content, .contactInfo__userInput--name::-webkit-input-placeholder, .contactInfo__userInput--email::-webkit-input-placeholder {
+.project__content--content, .newsSlickSlider__card--content, .contactInfo__userInput, .contactInfo__userInput--name::-webkit-input-placeholder, .contactInfo__userInput--email::-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -36,7 +36,7 @@
   background-color: #ffffff;
 }
 
-.project__content--content, .newsSlickSlider__card--content, .contactInfo__userInput--name:-ms-input-placeholder, .contactInfo__userInput--email:-ms-input-placeholder {
+.project__content--content, .newsSlickSlider__card--content, .contactInfo__userInput, .contactInfo__userInput--name:-ms-input-placeholder, .contactInfo__userInput--email:-ms-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -46,7 +46,7 @@
   background-color: #ffffff;
 }
 
-.project__content--content, .newsSlickSlider__card--content, .contactInfo__userInput--name::-ms-input-placeholder, .contactInfo__userInput--email::-ms-input-placeholder {
+.project__content--content, .newsSlickSlider__card--content, .contactInfo__userInput, .contactInfo__userInput--name::-ms-input-placeholder, .contactInfo__userInput--email::-ms-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -56,7 +56,7 @@
   background-color: #ffffff;
 }
 
-.project__content--content, .newsSlickSlider__card--content, .contactInfo__userInput--name::placeholder, .contactInfo__userInput--email::placeholder {
+.project__content--content, .newsSlickSlider__card--content, .contactInfo__userInput, .contactInfo__userInput--name::placeholder, .contactInfo__userInput--email::placeholder {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -64,10 +64,6 @@
   line-height: 1.7;
   color: #2c4058;
   background-color: #ffffff;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -148,7 +144,7 @@ body {
 }
 
 .nav__socialMedia--link:hover {
-  color: #444444;
+  background-color: #444444;
 }
 
 .sliderContainer {
@@ -208,7 +204,7 @@ body {
   margin: 0;
 }
 
-.slick-dots {
+.slickSliderContainer .slick-dots {
   position: absolute;
   left: 1550px;
   top: 100px;
@@ -220,15 +216,20 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #ffffff;
+  list-style: circle;
 }
 
-.slick-dots li button::before {
-  font-size: 1rem;
+.slick-slider .slick-dots {
+  list-style: circle;
+}
+
+.slick-dots li.slick-active {
   color: #ffffff;
+  opacity: 0, 75;
 }
 
-.scrollDown:hover {
-  color: #444444;
+.scrollDownArrow:hover {
+  background-color: #444444;
 }
 
 /*   projects   */
@@ -363,6 +364,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -431,6 +436,7 @@ body {
 .newsSlickSlider {
   width: 90%;
   height: 627px;
+  position: relative;
 }
 
 .newsSlickSlider__card {
@@ -455,6 +461,11 @@ body {
 
 .newsSlickSlider__card--author {
   padding-left: 1.2em;
+}
+
+.newsSliders .slick-slider ul {
+  position: absolute;
+  bottom: -25px;
 }
 
 /*   gallery   */
@@ -550,7 +561,7 @@ body {
   grid-area: 2/4/3/5;
 }
 
-.gallery--button {
+.gallery__button {
   width: 15%;
 }
 
@@ -635,10 +646,30 @@ body {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contactInfo__montichello--content {
+  height: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contactInfo__montichello--content--icon {
+  color: #7E5AFF;
+  font-size: 1rem;
+  margin: 0;
+  margin-right: 1em;
 }
 
 .contactInfo__userInput {
   width: 40%;
+  height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,21 +677,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contactInfo__userInput--name {
   border: none;
   border-bottom: 1px solid #2c405827;
+  padding: 1em 0;
+  font-size: 1rem;
 }
 
 .contactInfo__userInput--email {
   border: none;
   border-bottom: 1px solid #2c405827;
+  padding: 1em 0;
 }
 
 .contactInfo__userInput--submit {
+  margin-top: 3em;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -680,5 +716,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__copyRight {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.footer__socialMedia--icon--t {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.footer__socialMedia--link:hover {
+  color: #444444;
 }
 /*# sourceMappingURL=index.css.map */
