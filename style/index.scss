@@ -240,8 +240,7 @@ body {
   &__location {
     width: 60%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-round;
     color: #000000;
     font-family: $font-family2;
     font-style: italic;
@@ -252,6 +251,7 @@ body {
     &--icon {
       color: #000000;
       font-size: 1rem;
+      margin-right: 1em;
     }
   }
 }
@@ -291,7 +291,7 @@ body {
 }
 
 .newsSlickSlider {
-  width: 90%;
+  width: 60%;
   height: 627px;
   position: relative;
 
@@ -299,6 +299,7 @@ body {
     width: 77%;
     height: 514px;
     background-color: #ffffff;
+    margin: 0 auto;
 
     &--title {
       font-style: normal;
@@ -324,6 +325,7 @@ body {
 .newsSliders .slick-slider ul {
   position: absolute;
   bottom: -25px;
+  color: #ffffff;
 }
 
 /*   gallery   */
@@ -345,6 +347,10 @@ body {
   &__title {
     width: 13%;
     height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
     &--divider {
       border: 1px solid $font-blue;
@@ -481,13 +487,17 @@ body {
       &::placeholder {
         @extend %content;
       }
+
     }
 
     &--email {
       border: none;
       border-bottom: 1px solid #2c405827;
       padding: 1em 0;
+      font-size: 1rem;
+
       &::placeholder {
+        opacity: .5;
         @extend %content;
       }
     }
@@ -530,7 +540,7 @@ body {
     }
 
     &--link:hover {
-      color: #444444;
+      background-color: #444444;
     }
   }
 }

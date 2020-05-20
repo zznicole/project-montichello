@@ -34,6 +34,7 @@ $('.newsSliders').slick({
   slidesToShow: 3,
   // autoplay: true,
   draggable: true,
+  speed: 4000,
 });
 
 /*  contect  */
