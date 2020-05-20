@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="shortcut icon" type="image/png" href="img/header-Logo.png">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>project-montichello</title>
 	  <link rel="stylesheet" href="style/index.css">
 
@@ -66,7 +65,7 @@
 				</div>
             </div>
         </div>
-        <a href="#projects"><img src="img/header-scrollDown.svg" class="scrollDown"></a>
+        <a href="#projects"><img src="img/header-scrollDown.svg" class="scrollDownArrow"></a>
       </header>
 <!--  projects  --> 
       <section class="projectsSection" id="projects">
@@ -111,7 +110,7 @@
 					</div>
       </section>
 <!--  news  --> 
-      <section class="news">
+      <section class="news" id="news">
           <div class="news__title">
 							<hr class="news__title--divider" width="30%">
 							<h2 class="news__title--title">LATEST NEWS</h2>
@@ -177,7 +176,7 @@
 					</div>
       </section>
 <!--  contact --> 
-      <section class="contactSection">
+      <section class="contactSection" id="contact">
           <div id="map">
 
           </div>
@@ -210,13 +209,13 @@
                           class="contactInfo__userInput--name" 
                           placeholder="Mollie Medina" 
                           pattern="[A-Za-z}" 
-                          title="Error,Please enter your first name and family name again!"
+                          title="Please enter your first name and surname."
                           autocomplete="on" autofocus>
                       <input type="email" 
                           class="contactInfo__userInput--email" 
                           placeholder="Email" 
                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                          title="Error,Please enter your email again!"
+                          title="Please enter your email."
                           autocomplete="on">
                       <button type="submit" id="submitButton" class="contactInfo__userInput--submit">SUBMIT</button>
                   </div>
@@ -226,16 +225,15 @@
           
   <!--  footer  -->    
       <footer class="footer">
-         <div class="footer__logo"><img src="img/header-logo.svg" /><h6 class="copyRight">Copyrights 202 Montichello</h6></div>
-         <div class="footer__socialmedia">
-          <img src="img/header-fb.svg" />
-          <img src="img/header-twitter.svg" />
-          <img src="img/header-ig.svg" />
+         <div class="footer__logo"><img src="img/header-logo.svg" /><h6 class="footer__copyRight">Copyrights © 202 Montichello</h6></div>
+         <div class="footer__socialMedia">
+          <a href="https://www.facebook.com/#" class="nav__socialMedia--link"><img src="img/header-fb.svg" class="nav__socialMedia--icon nav__socialMedia--icon--fb"></a>
+          <a href="https://www.twitter.com/#" class="nav__socialMedia--link"><img src="img/header-twitter.svg" class="nav__socialMedia--icon nav__socialMedia--icon--t"></a>
+          <a href="https://www.instagram.com/#" class="nav__socialMedia--link"><img src="img/header-ig.svg" class="nav__socialMedia--icon nav__socialMedia--ig"></a>
         </div>
       </footer>
 		</div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDavq408dDoC0s9YX_b-IesuoLeahfeMVE"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>

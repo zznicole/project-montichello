@@ -1,5 +1,24 @@
 /*  header  */
-// nav link smooth scroll has been done in css line 4-5
+
+// nav smooth scroll 
+$(".nav__lists--list.scrollDownArrow").on('click', function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+
+    let hash = this.hash;
+   
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+ 
+      
+      window.location.hash = hash;
+    });
+  } 
+});
+
+
+// slick slider 
 $('.slickSliderContainer').slick({
   dots: true,
   // autoplay: true,
@@ -11,8 +30,8 @@ $('.slickSliderContainer').slick({
 $('.newsSliders').slick({
   dots: true,
   infinite: true,
-  slidesToScroll: 1,
-  slidesToShow: 1,
+  slidesToScroll: 3,
+  slidesToShow: 3,
   autoplay: true,
 });
 

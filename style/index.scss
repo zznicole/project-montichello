@@ -1,9 +1,9 @@
 @import "fonts";
 @import "extends";
 
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: smooth;
+// }
 
 body {
   margin: 0;
@@ -130,7 +130,7 @@ body {
   color: $font-white;
 }
 
-.scrollDown:hover {
+.scrollDownArrow:hover {
   color: #444444;
 }
 
@@ -440,13 +440,16 @@ body {
 
     &__userInput {
         width: 40%;
+        height: 20%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        @extend %content;
         
         &--name {
             border: none;
             border-bottom: 1px solid #2c405827;
+            padding: 1em 0;
 
             &::placeholder {
                 @extend %content;
@@ -457,8 +460,7 @@ body {
         &--email { 
             border: none;
             border-bottom: 1px solid #2c405827 ;
-       
-            
+            padding: 1em 0;
             &::placeholder {
                 @extend %content;
             }  
@@ -484,4 +486,19 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  
+  &__copyRight {
+    @extend %content;
+  }
+
+  &__socialMedia {
+    &--icon--t {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    &--link:hover {
+      color: #444444;
+    }
+  }
 }
